@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap");
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: "Martian Mono", monospace; */
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  /* background-color: #e5e5f7;
+  background-image: linear-gradient(
+      #444df7 1.4000000000000001px,
+      transparent 1.4000000000000001px
+    ),
+    linear-gradient(
+      to right,
+      #444df7 1.4000000000000001px,
+      #e5e5f7 1.4000000000000001px
+    );
+  background-size: 32px 32px; */
+  /* background-image: linear-gradient(
+      #99999921 1.4000000000000001px,
+      transparent 1.4000000000000001px
+    ),
+    linear-gradient(
+      to right,
+      #99999921 1.4000000000000001px,
+      #e5e5f722 1.4000000000000001px
+    );
+    background-size: 8px 8px; */
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 0.5) 0%,
+    rgba(148, 187, 233, 0.5) 100%
+  );
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h3,
+h2 {
+  font-family: "Martian Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,19 @@
+.resources__title {
+  margin-top: 90px;
+  text-align: center;
+
+  padding: 14px;
+  background-color: #ffffff9f;
+}
+
+.resources__list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: 0 auto;
+  width: fit-content;
+  justify-content: center;
+  margin-bottom: 80px;
+}

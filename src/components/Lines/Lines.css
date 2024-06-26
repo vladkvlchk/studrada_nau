@@ -1,0 +1,84 @@
+#line1,
+#line2 {
+  min-width: 100%;
+  list-style: none;
+  background-color: blue;
+  color: #f4f4f4;
+  margin: 0 auto;
+  padding: 0;
+  height: 32px;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  gap: 6px;
+  font-weight: 700;
+  position: absolute;
+}
+
+#line1 {
+  rotate: 3deg;
+  width: calc(421px * 5);
+}
+
+#line2 {
+  rotate: -2deg;
+  width: calc(421px * 5);
+}
+
+.line__item {
+  position: absolute;
+  min-width: max-content;
+  width: 421px;
+}
+
+#line2 .line__item {
+  left: 100%;
+  animation: autoRunFromRight calc(36.5s) linear infinite;
+}
+
+#line1 .line__item {
+  right: 100%;
+  animation: autoRunFromLeft calc(36.5s) linear infinite;
+}
+
+@keyframes autoRunFromRight {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+    transform: translateX(-165%);
+  }
+}
+
+@keyframes autoRunFromLeft {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 0;
+    transform: translateX(165%);
+  }
+}
+
+#line1 .line__item[position="1"], 
+#line2 .line__item[position="1"]{
+  animation-delay: -30s;
+}
+
+#line1 .line__item[position="2"], 
+#line2 .line__item[position="2"] {
+  animation-delay: calc(-30s + 7.3s);
+}
+#line1 .line__item[position="3"], 
+#line2 .line__item[position="3"] {
+  animation-delay: calc(-30s + (7.3s * 2));
+}
+#line1 .line__item[position="4"], 
+#line2 .line__item[position="4"] {
+  animation-delay: calc(-30s + (7.3s * 3));
+}
+#line1 .line__item[position="5"], 
+#line2 .line__item[position="5"] {
+  animation-delay: calc(-30s + (7.3s * 4));
+}
