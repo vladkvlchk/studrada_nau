@@ -1,7 +1,6 @@
 .resources__title {
   margin-top: 90px;
   text-align: center;
-
   padding: 14px;
   background-color: #ffffff9f;
 }
@@ -16,4 +15,5 @@
   width: fit-content;
   justify-content: center;
   margin-bottom: 80px;
+  padding: 0;
 }
