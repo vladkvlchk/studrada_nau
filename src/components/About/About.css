@@ -66,3 +66,23 @@
     font-size: 42px;
   }
 }
+
+@media (max-width: 400px) {
+  .logo{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 72px;
+  }
+
+  .about__title{
+    font-size: 34px;
+  }
+
+  .about__description {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    font-size: 16px;
+    border-radius: 0;
+  }
+}
